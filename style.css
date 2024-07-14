@@ -1,7 +1,8 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Kumbh" ,sans-serif;
+  box-sizing: border-box;
 }
 body, html{
   width: 100%;
@@ -11,14 +12,17 @@ body, html{
 nav{
   padding: 40px;
   display: flex;
+  height: 15%;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navvalues a{
   text-decoration: none;
   color: #000;
-  margin-right: 30px;
-  opacity: 0.6;
+  margin-right: 35px;
+  opacity: 0.4;
+  font-size: 14px;
   /* position: relative; */
   transition: border-bottom 200ms;
 }
@@ -27,6 +31,7 @@ nav{
   width: 50%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo{
@@ -56,12 +61,14 @@ main{
   width: 100%;
   height: 80%;
 }
+
 .leftpart{
+  margin: 50px;
   width: 50%;
-  background-color: aqua;
+  background-image: url(https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: center;
 }
-
-
 .rightpart{
   padding: 20px;
   display: inline;
@@ -69,7 +76,7 @@ main{
 }
 .rightpart .textpart{
   margin-top: 20px;
-  height: 40%;
+  height: 45%;
 }
 
 .textpart{
@@ -78,7 +85,7 @@ main{
 .textpart h4{
   opacity: 0.4;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .textpart .title{
   font-size: 38px;
@@ -86,6 +93,7 @@ main{
   font-weight: 700;
 }
 .textpart p{
+  font-size: 14px;
   opacity: 0.4;
 }
 /* .leftpart .pricepart{
@@ -99,7 +107,7 @@ main{
 .cartpart{
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .cartpart .cartbtn{
@@ -122,22 +130,37 @@ main{
 .cartpart .inc-dec{
   margin-top: 20px;
   margin-left: 10px;
+}
 
+.inc-dec input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 16px;
 }
 
 span{
+  font-weight: 600;
+  margin-left: 20px;
   background-color: #000;
   color: white;
 }
+del{
+  opacity: 0.4;
+}
 
 .rightpart .pricepart{
-  margin-top: 20px;
-  height: 10%;
-  background-color: crimson;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-left: 20px;
+  height: 8%;
 }
 
 .rightpart .cartpart{
+  margin-left: 20px;
   margin-top: 20px;
-  height: 30%;
-  /* background-color:deeppink; */
+  height: 20%;
 }
