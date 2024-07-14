@@ -97,12 +97,32 @@ main{
 }
 
 .cartpart{
-  margin: 40px;
   display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .cartpart .cartbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin-left: 40px;
   background-color:hsl(26, 100%, 55%) ;
+  height: 25%;
+  width: 50%;
+  border-radius: 10px;
+}
+.cartpart .cartbtn .icon {
+  margin-right: 20px; 
+}
+.txt{
+  font-weight: 600;
+}
+.cartpart .inc-dec{
+  margin-top: 20px;
+  margin-left: 10px;
+
 }
 
 span{
@@ -119,5 +139,5 @@ span{
 .rightpart .cartpart{
   margin-top: 20px;
   height: 30%;
-  background-color:deeppink;
+  /* background-color:deeppink; */
 }
